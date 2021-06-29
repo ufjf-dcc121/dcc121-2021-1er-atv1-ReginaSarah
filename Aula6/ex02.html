@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seletores</title>
+    <style>
+      ul li {
+        background-color: rgb(250, 149, 216);
+        color: rgb(0, 0, 0);
+      }
+      ol > li {
+        background-color: aquamarine;
+        color: blueviolet;
+      }
+      #dialet {
+        background-color: rgb(181, 223, 181);
+      }
+      .turno {
+        text-decoration: underline;
+      }
+      body > ol > ul > li:nth-child(1) {
+        color: red;
+      }
+      .dureza {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Seletores</h1>
+    <ol>
+      <li id="dialet">Segunda</li>
+      <ul>
+        <li class="turno dureza">Manhã</li>
+        <li class="turno">Tarde</li>
+        <li class="turno">Noite</li>
+      </ul>
+      <li>Terça</li>
+      <li>Quarta</li>
+      <li>Quinta</li>
+      <li>Sexta</li>
+    </ol>
+    <ul>
+      <li>Dia Letivo</li>
+      <li>Recesso</li>
+      <li>Feriado</li>
+    </ul>
+  </body>
+</html>
