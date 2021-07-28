@@ -9,13 +9,25 @@
   <body>
     <h1>JavaScript 01</h1>
     <script>
-      var a = 0;
+      var a = 1;
+      let b = 5;
+      const c = 5;
+      b = 5 + 1;
       function dizLoop() {
         for (a = 0; a < 10; a++) {
           console.log("Loop: ", a);
         }
       }
-      dizLoop();
+      let multiplica = function (x, y) {
+        return x * y;
+      };
+      console.log(multiplica(a, b));
+      multiplica = (x, y) => {
+        return 2 * x * y;
+      };
+      console.log(multiplica(a, b));
+      multiplica = (x, y) => 3 * x * y;
+      console.log(multiplica(a, b));
     </script>
   </body>
 </html>
