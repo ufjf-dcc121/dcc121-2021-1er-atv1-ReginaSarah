@@ -15,6 +15,12 @@
             "request": "launch",
             "name": "Open ex3.html",
             "file": "c:\\Users\\rsara\\OneDrive\\Documentos\\LabWeb\\LW\\Aula8\\ex3.html"
+        },
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Open ex4.html",
+            "file": "c:\\Users\\rsara\\OneDrive\\Documentos\\LabWeb\\LW\\Aula8\\ex4.html"
         }
     ]
 }
