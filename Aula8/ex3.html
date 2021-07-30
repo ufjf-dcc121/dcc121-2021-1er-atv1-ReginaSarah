@@ -11,6 +11,11 @@
     <script>
       //document.body.innerText = "Olá, mundinhoooo!" ----- Muda o texto do body
       //document.body.innerHTML = "<h1> Olá </h1>" ---- interpreta o HTML
+      for (let c = 0; c < 10; c++) {
+        let eMensagem = document.createElement("h2");
+        eMensagem.innerText = "Funcionou!";
+        document.body.appendChild(eMensagem);
+      }
     </script>
   </body>
 </html>
