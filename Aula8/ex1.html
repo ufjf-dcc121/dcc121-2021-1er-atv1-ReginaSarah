@@ -28,6 +28,15 @@
       console.log(multiplica(a, b));
       multiplica = (x, y) => 3 * x * y;
       console.log(multiplica(a, b));
+
+      let objeto = {};
+      objeto.nome = "Regina";
+      objeto.idade = 21;
+      objeto.dizOla = function () {
+        console.log("Olá, querida!");
+        console.log("Meu nome é ", this.nome);
+      };
+      objeto.dizOla();
     </script>
   </body>
 </html>
