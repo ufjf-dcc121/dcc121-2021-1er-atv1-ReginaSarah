@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 10</title>
+    <style>
+      div {
+        width: 80px;
+        height: 80px;
+        padding: 10px;
+        font-size: 75px;
+      }
+      .feliz {
+        background-color: yellow;
+        color: black;
+      }
+      .triste {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo JS01</h1>
+    <div>Oi</div>
+    <script>
+      let eDiv = document.querySelector("div");
+      eDiv.classList.add("feliz");
+      eDiv.addEventListener("click", divClick, false);
+
+      let eh1 = document.querySelector("h1");
+      eh1.addEventListener("click", divClick, false);
+
+      document.addEventListener("keydown", keyPressed, false);
+
+      function divClick(event) {
+        console.log("Click");
+        let target = event.target;
+        if (target.classList.contains("feliz")) {
+          target.classList.add("triste");
+          target.classList.remove("feliz");
+        } else {
+          target.classList.add("feliz");
+          target.classList.remove("triste");
+        }
+      }
+
+      function keyPressed(event) {
+        event.preventDefault(); //ressignifica o F5
+        eh1.textContent = "Tecla: " + event.keyCode;
+      }
+    </script>
+  </body>
+</html>
